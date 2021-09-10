@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import { DopeScope } from './DopeScope';
+import '@fontsource/roboto';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,11 +1,13 @@
 import React from "react";
 
+
   export interface Slide {
     id: number;
     name: string;
     description: string;
     dateCollected: string;
     collectedBy: number;
+    picURL: string
   }
 
   export const SlideCard: React.FC<Slide> = ({
@@ -14,14 +16,20 @@ import React from "react";
     description,
     dateCollected,
     collectedBy,
-  }) => {
+    picURL,
+    
+  } 
+  ) => {
+   
     return (
       <>
-        <h1 className="card">{id}</h1>
-        <h1 className="card">{name}</h1>
-        <h1 className="card">{description}</h1>
-        <h1 className="card">{dateCollected}</h1>
-        <h1 className="card">{collectedBy}</h1>
+        <div className="card">
+        <h1>{name}</h1>
+        <h5 >{description}</h5>
+        <h5 >{dateCollected}</h5>
+        <h5 >{collectedBy}</h5>
+        <img src={picURL} alt="Test" />
+        </div>
       </>
     );
   };

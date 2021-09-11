@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide, SlideCard } from "./SlideCard";
-import "./Slide.css"
+import "./Slide.css";
 
 let SlideListData: Slide[] = [
   {
@@ -37,10 +37,10 @@ let SlideListData: Slide[] = [
 export const SlideList: React.FC = () => {
   return (
     <>
-        <div className="slide-list">
-      {SlideListData.map((slide) => {
-        return (
-          <>
+      <div className="slide-list">
+        {SlideListData.map((slide) => {
+          return (
+            <>
               <SlideCard
                 name={slide.name}
                 userId={slide.userId}
@@ -50,10 +50,10 @@ export const SlideList: React.FC = () => {
                 id={slide.id}
                 picURL={slide.picURL}
               />
-          </>
-        );
-      })}
-      ;
+            </>
+          );
+        })}
+        ;
       </div>
     </>
   );

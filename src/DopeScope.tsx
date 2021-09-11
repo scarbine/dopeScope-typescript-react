@@ -3,6 +3,7 @@ import "./DopeScope.css"
 
 import { SlideList } from "./components/slide/SlideList"
 import { UserList } from "./components/users/UserList"
+import { OrganismClassificationList } from "./components/OrganismClassification/OrganismClassificationList"
 
 export const DopeScope: React.FC = () => {
 	return(
@@ -12,6 +13,7 @@ export const DopeScope: React.FC = () => {
 			<div className="main-container">
 			<SlideList />
 			<UserList />
+			<OrganismClassificationList />
 			</div>
 		</>
 	)

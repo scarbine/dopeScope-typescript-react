@@ -4,6 +4,7 @@ import "./DopeScope.css"
 import { SlideList } from "./components/slide/SlideList"
 import { UserList } from "./components/users/UserList"
 import { OrganismClassificationList } from "./components/OrganismClassification/OrganismClassificationList"
+import { KingdomList } from "./components/kingdom/KingdomList"
 
 export const DopeScope: React.FC = () => {
 	return(
@@ -14,6 +15,7 @@ export const DopeScope: React.FC = () => {
 			<SlideList />
 			<UserList />
 			<OrganismClassificationList />
+			<KingdomList />
 			</div>
 		</>
 	)

@@ -1,18 +1,12 @@
 import React from "react";
+import { OrganismClassification } from "./iOrganismClassification";
 
-export interface OrganismClassification {
-  id: number;
-  Name: string;
-}
 
-export const OrganismClassificationCard: React.FC<OrganismClassification> = ({
-  id,
-  Name,
-}) => {
+
+export const OrganismClassificationCard: React.FC<OrganismClassification> = (props) => {
   return (
     <>
-      <div>{id} ) {Name}</div>
-      
+      <div>{props.id} ) {props.Name}</div> 
     </>
   );
 };

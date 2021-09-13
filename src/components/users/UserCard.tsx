@@ -1,19 +1,15 @@
 import React from "react"
+import { User } from "./UserList"
 import "./User.css"
 
 
-export interface User {
-	id: number,
-	firstName: string,
-	lastName: string,
-}
-
-
-export const UserCard : React.FC<User> = ({id, firstName, lastName}) => {
+export const UserCard : React.FC<User> = (props) => {
 
 	return(
 		<>
-		<h2>{id} ) {firstName} {lastName}</h2>
+		<h2>{props.id} ) {props.firstName} {props.lastName}</h2>
 		</>
 	)
 }
+
+

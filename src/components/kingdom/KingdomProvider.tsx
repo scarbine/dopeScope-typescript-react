@@ -1,5 +1,5 @@
 import React from 'react'
-import { Kingdom } from './KingdomCard'
+import { Kingdom } from './iKingdom'
 
 
 export const KingdomData : Kingdom [] = [

@@ -1,19 +1,15 @@
 import React from "react";
+import { Kingdom } from "./iKingdom";
 
-export interface Kingdom {
-  id: number;
-  name: string;
-  description: string;
-}
 
-export const KingdomCard: React.FC<Kingdom> = ({ id, name, description }) => {
+export const KingdomCard: React.FC<Kingdom> = (props) => {
   return (
     <>
       <div>Kingdom Card</div>
       <div>
-        {id}: {name}
+        {props.id}: {props.name}
       </div>
-      <div>{description}</div>
+      <div>{props.description}</div>
     </>
   );
 };
